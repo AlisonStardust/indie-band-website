@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Amatic SC', cursive;
+}
+
+.main-photo {
+  border: 1px solid black;
+  height: 700px;
+  width: auto;
+  background-image: url('img/wesley-tingey.jpg');
+}
+
+@media (min-width: 10px) and (max-width: 480px) {
+
+}
+
+@media (min-width: 481px) and (max-width: 650px) {
+
+}
+
+@media (min-width: 651px) and (max-width: 1204px) {
+
+.main-photo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+}
+
+@media (min-width: 1205px) and (max-width: 3000px) {
+
+.main-photo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.main-about-wrapper {
+  height: 1000px;
+}
+
+.main-about__figure--img {
+  height: 200px;
+  border: 1px solid black;
+  box-shadow: 15px 15px 0px 5px white, 20px 20px 0px 10px blue;
+}
+
+}
+/*
+  animation: glow 1s infinite alternate linear;
+}
+
+@keyframes glow {
+  to {
+    text-shadow: 0px 0px 20px #2F0A28;
+  }
+}
+*/
