@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Playfair Display SC', serif;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 
 .main-wrapper {
@@ -21,17 +21,31 @@
 }
 
 .main-photo > span {
+  padding-left: 10px;
   width: 100%;
   background-color: black;
   color: white;
   opacity: 0.9;
+  box-shadow: inset  0px  8px 88px -8px #696868;
   animation: glow 2s infinite alternate linear;
 }
 
 @keyframes glow {
   to {
-    text-shadow: 0px 0px 20px pink;
+    text-shadow: 2px 0px 10px grey;
   }
+}
+
+.main-about__figure {
+  border-bottom: 2px solid black;
+}
+
+.main-about__figure--img {
+  box-shadow: 15px 15px 0px 5px white, 20px 20px 0px 10px blue;
+}
+
+.main-about__figure--img:hover {
+  box-shadow: 15px 15px 0px 5px blue, 20px 20px 0px 10px yellow;
 }
 }
 
@@ -73,17 +87,31 @@
 }
 
 .main-about-wrapper {
-  height: 1000px;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-about__figure {
+  margin-top: 15px;
+  margin-left: 15px;
+  flex-basis: 100%;
 }
 
 .main-about__figure--img {
-  height: 200px;
+  height: 250px;
   border: 1px solid black;
-  box-shadow: 15px 15px 0px 5px white, 20px 20px 0px 10px blue;
+  margin-bottom: 10px;
 }
 
 .main-music-img {
   width: 400px;
+}
+
+.main-about__figure--figcaption {
+  font-size: 2em;
+  padding: 50px 50px 0px 50px;
+  text-align: center;
 }
 }
 /*
