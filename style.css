@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Playfair Display SC', serif;
-  /*border: 1px solid black;*/
+  border: 1px solid black;*/
 }
 
 .main-wrapper {
@@ -27,13 +27,41 @@
   color: white;
   opacity: 0.9;
   box-shadow: inset  0px  8px 88px -8px #696868;
-  animation: glow 2s infinite alternate linear;
+  -webkit-animation: color-change 2s infinite;
+  -moz-animation: color-change 2s infinite;
+  -o-animation: color-change 2s infinite;
+  -ms-animation: color-change 2s infinite;
+  animation: color-change 2s infinite;
 }
 
-@keyframes glow {
-  to {
-    text-shadow: 2px 0px 10px grey;
-  }
+@-webkit-keyframes color-change {
+  0% { color: pink; }
+  50% { color: white; }
+  100% { color: pink; }
+}
+
+@-moz-keyframes color-change {
+  0% { color: pink; }
+  50% { color: white; }
+  100% { color: pink; }
+}
+
+@-ms-keyframes color-change {
+  0% { color: pink; }
+  50% { color: white; }
+  100% { color: pink; }
+}
+
+@-o-keyframes color-change {
+  0% { color: pink; }
+  50% { color: white; }
+  100% { color: pink; }
+}
+
+@keyframes color-change {
+  0% { color: pink; }
+  50% { color: white; }
+  100% { color: pink; }
 }
 
 .main-about__figure {
@@ -51,6 +79,14 @@
 
 @media (min-width: 10px) and (max-width: 480px) {
 
+.main-wrapper {
+  width: 80px;
+}
+.main-photo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
 }
 
 @media (min-width: 481px) and (max-width: 650px) {
@@ -114,13 +150,3 @@
   text-align: center;
 }
 }
-/*
-  animation: glow 1s infinite alternate linear;
-}
-
-@keyframes glow {
-  to {
-    text-shadow: 0px 0px 20px #2F0A28;
-  }
-}
-*/
